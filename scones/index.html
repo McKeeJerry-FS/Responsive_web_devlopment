@@ -8,29 +8,29 @@
             content="A basic responsive web page – an example from Chapter 1"
         />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="/scones/css/styles.css" />
     </head>
-    <body>
-        <div class="Header">
+    <article>
+        <header class="Header">
             <a href="/" class="LogoWrapper"
-                ><img src="img/SOC-Logo.png" alt="Scone O'Clock logo"
+                ><img src="/scones/img/SOC-Logo.png" alt="Scone O'Clock logo"
             /></a>
             <h1 class="Strap">Scones: the most resplendent of snacks</p>
-        </div>
-        <div class="IntroWrapper">
+            </header>
+        <section class="IntroWrapper">
             <h2 class="IntroText">
                 Occasionally maligned and misunderstood; the scone is a
                 quintessentially British classic.
             </h2>
-            <div class="MoneyShot">
-                <img src="/img/scones.jpg" alt="Scones image" class="MoneyShotImg">
-                <p class="ImageCaption">
+            <figure class="MoneyShot">
+                <img src="/scones/img/scones.jpg" alt="Scones image" class="MoneyShotImg">
+                <figcaption class="ImageCaption">
                     Incredible scones, picture from Wikipedia
-                </p>
-            </div>
-        </div>
+                </figcaption>
+            </figure>
+        </section>
         <p>Recipe and serving suggestions follow.</p>
-        <div class="Ingredients">
+        <section class="Ingredients">
             <h3 class="SubHeader">Ingredients</h3>
             <ul>
                 <li>350g self-raising flour, and a little spare for dusting</li>
@@ -44,8 +44,8 @@
                 <li>beaten egg, to glaze</li>
                 <li>jam and clotted cream, to serve</li>
             </ul>
-        </div>
-        <div class="HowToMake">
+        </section>
+        <section class="HowToMake">
             <h3 class="SubHeader">Method</h3>
             <ol class="MethodWrapper">
                 <li>
@@ -91,6 +91,12 @@
                     oven (about 160&deg;C) for a few minutes to refresh.
                 </li>
             </ol>
-        </div>
-    </body>
+        </section>
+        <footer>
+            Made for the book,
+            <a href="https://rwd.education">'Responsive Web Design with HTML5 and CSS3'</a>
+            by
+            <address><a href="https://benfrain.com">Ben Frain</a></address>
+        </footer>
+    </article>
 </html>
