@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video in HTML5</title>
+    <link rel="stylesheet" href="/Example_Sites/css/styles.css">
 </head>
 <body>
     <!-- Video tag is used for embedding video into the HTML -->
@@ -16,7 +17,13 @@
            preload="auto" 
            loop 
            poster="myVideoPoster.png">
-        If you are reading this then either the video did not load successfully or your browser is extremely old!
+           <source src="video/myVideo.sp8" type="video/super8" />
+           <source src="video/myVideo.mp4" type="video/mp4" />
+           <p>
+               <b>Download Video:</b>
+               MP4 Format:
+               <a href="myVideo.mp4">"MP4"</a>
+           </p>
     </video>
 </body>
 </html>
