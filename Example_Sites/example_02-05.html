@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Dialog</title>
+    <link rel="stylesheet" href="/Example_Sites/css/styles.css">
+</head>
+<body>
+    <button id="launchDialog">Where is the Dialog?</button>
+    <p id="dialogOutput"></p>
+    <dialog id="dialog">
+        <form method="dialog">
+            <h1>How about this? A native Dialog.</h1>
+            <p>So, the only thing left to do is dismiss me.</p>
+            <button value="dismissDialog">Dismiss</button>
+        </form>
+    </dialog>
+
+
+    <script>
+        const dialog = document.getElementById('dialog');
+        const launchDialog = document.getElementById('launchDialog');
+        const dialogOutput = document.getElementById('dialogOutput');
+
+        launchDialog.addEventListener('click', () => dialog.showModal());
+        dialog.addEventListener('close', () => {
+            dialogOutput.textContent = dialog.returnValue;
+        });
+    </script>
+</body>
+</html>

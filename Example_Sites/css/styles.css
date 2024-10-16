@@ -3,6 +3,7 @@ video {
     height: auto;
 }
 
+/* for Example_02-04.html */
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -23,4 +24,31 @@ video {
 .iframe-16-9 {
     aspect-ratio: 16 / 9;
     max-width: 100%;
+}
+
+/* For Example_02-05.html */
+
+dialog {
+    border-radius: 10px;
+}
+
+dialog::backdrop {
+    animation: fade 0.5s ease forwards;
+}
+
+button {
+    height: 40px;
+    padding: 5px 10px;
+}
+button:focus {
+    outline: 2px solid #f90;
+}
+
+@keyframes fade {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: rgb(0 57 24 / 0.6);
+    }
 }
