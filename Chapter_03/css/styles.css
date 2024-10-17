@@ -831,3 +831,19 @@ blockquote {
 .rwd-TopBtn svg {
     fill: var(--r7);
 }
+
+@media (min-width: 800px) {
+    .rwd-MastHead {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 30px auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .rwd-Nav{
+        margin: 0;
+        padding: 0;
+    }
+}
